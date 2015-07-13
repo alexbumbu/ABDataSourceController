@@ -4,8 +4,8 @@ Simple to use approach to get rid of your UITableViewDataSource & UITableViewDel
 
 ## Integration
 
-* Clone this repository and drag the content of ABDataSourceController folder to your project.  
-* To use you just need to create your custom data source controller object that implements ABDataSourceController protocol:
+* Clone this repository and drag the content of ```ABDataSourceController``` folder to your project.  
+* To use you just need to create your custom data source controller object that implements ```ABDataSourceController``` protocol:
 
 ```objective-c
 #import "ABDataSourceController.h"
@@ -17,7 +17,7 @@ Simple to use approach to get rid of your UITableViewDataSource & UITableViewDel
 
 @end
 
-@implementation MainDataSourceController {
+@implementation CustomDataSourceController {
     NSArray *_dataSource;
 }
 
@@ -62,7 +62,7 @@ Simple to use approach to get rid of your UITableViewDataSource & UITableViewDel
 
 ```
 
-* All that's left is to initialize the data source controller in your ```UIViewController``` and assign it to your ```UITableView``` ```dataSourceController``` property and you're ready to go!
+* All that's left is to initialize the data source controller in your UIViewController and assign it to your UITableView ```dataSourceController``` property and you're ready to go!
 
 ```objective-c
 #import "UITableView+DataSourceController.h"
@@ -76,7 +76,7 @@ Simple to use approach to get rid of your UITableViewDataSource & UITableViewDel
     // Do any additional setup after loading the view from its nib.
 
     // setup data source controller
-    MainDataSourceController *dataSourceCtrl = [[MainDataSourceController alloc] init];
+    CustomDataSourceController *dataSourceCtrl = [[CustomDataSourceController alloc] init];
     dataSourceCtrl.tableView = tableView;
     dataSourceCtrl.viewController = self;
     tableView.dataSourceController = dataSourceCtrl;
