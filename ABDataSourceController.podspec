@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name         = "ABDataSourceController"
   s.version      = "1.0.0"
-  s.summary      = "Simple to use approach to get rid of your UITableView data source & delegate code from your UIViewController and share it between controllers."
+  s.summary      = "Simple to use approach to clean your UITableView data source & delegate code from your UIViewController and share it between controllers."
   s.homepage     = "https://github.com/alexbumbu/ABDataSourceController"
   s.license      = "MIT"
   s.license      = { :type => "MIT", :file => "LICENSE" }
