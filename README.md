@@ -62,7 +62,8 @@ Simple to use approach to get rid of your UITableViewDataSource & UITableViewDel
 
 ```
 
-* All that's left is to initialize the data source controller in your UIViewController and assign it to your UITableView ```dataSourceController``` property and you're ready to go!
+* To use from Interface Builder add an object to your view controlle XIB and change it's class to CustomDataSourceController. Now connect the tableView and viewController outlets for the newly created object and connect the table view's dataSourceController outlet to your custom object. You're ready to go! 
+* To use from code initialize the data source controller in your UIViewController, assign it to your UITableView ```dataSourceController``` property and you're ready to go!
 
 ```objective-c
 #import "UITableView+DataSourceController.h"
