@@ -4,7 +4,7 @@ Simple to use approach to get rid of your UITableViewDataSource & UITableViewDel
 
 ## Integration
 
-* Clone this repository and drag the content of ```ABDataSourceController``` folder to your project.  
+* Install via cocoapods (just add pod ```'ABDataSourceController', '~> 1.0'```), or clone this repository and drag the content of ```ABDataSourceController``` folder to your project.  
 * To use you just need to create your custom data source controller object that implements ```ABDataSourceController``` protocol:
 
 ```objective-c
