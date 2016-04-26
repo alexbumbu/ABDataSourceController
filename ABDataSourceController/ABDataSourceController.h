@@ -17,3 +17,12 @@
 - (void)refreshDataSourceWithCompletionHandler:(void (^)())completion;
 
 @end
+
+@protocol ABCollectionViewDataSourceController <NSObject, UICollectionViewDataSource, UICollectionViewDelegate>
+
+@property (nonatomic, assign) IBOutlet UICollectionView *collectionView;
+@property (nonatomic, assign) IBOutlet UIViewController *viewController;
+
+- (void)refreshDataSourceWithCompletionHandler:(void (^)())completion;
+
+@end
