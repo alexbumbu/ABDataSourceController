@@ -1,0 +1,12 @@
+PODS:
+  - ABMenuTableViewCell (1.0.3)
+
+DEPENDENCIES:
+  - ABMenuTableViewCell (~> 1.0)
+
+SPEC CHECKSUMS:
+  ABMenuTableViewCell: 81c6c5cdf7ac1e6c38eeebb44110cb8cd9c25eb2
+
+PODFILE CHECKSUM: 74ef60ce99ca4a117ccfa65c7b30dd0de5b3893d
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,9 @@
+platform :ios, '7.0'
+inhibit_all_warnings!
+
+target 'SampleProject' do
+
+#    pod 'ABDataSourceController', :path => '../../ABDataSourceController.podspec'
+    pod 'ABMenuTableViewCell', '~> 1.0'
+
+end
