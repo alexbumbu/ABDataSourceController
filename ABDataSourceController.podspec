@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.author       = {"Alex Bumbu" => "https://github.com/alexbumbu"}
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/alexbumbu/ABDataSourceController.git", :tag => "1.0.1" }
-  s.source_files  = "ABDataSourceController"
+  s.source_files  = "ABDataSourceController/**/*.{h,m}"
   s.requires_arc = true
 end
