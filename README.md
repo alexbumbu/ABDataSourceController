@@ -1,6 +1,6 @@
 # ABDataSourceController
 
-Simple Objective-C and [Swift](https://github.com/alexbumbu) implementation for getting rid of your UITableView & UICollectionView delegate and data source code from your UIViewController and share it between UIViewControllers.
+Simple Objective-C and [Swift](https://github.com/alexbumbu/ABDataSourceController/blob/master/README-swift.md) implementation for getting rid of your UITableView & UICollectionView delegate and data source code from your UIViewController and share it between UIViewControllers.
 
 ## Compatibility
 
