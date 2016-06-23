@@ -8,7 +8,7 @@ Simple Objective-C and [Swift](https://github.com/alexbumbu/ABDataSourceControll
 
 ## Integration
 
-* Install via cocoapods (just add pod ```'ABDataSourceController', '~> 1.1'``` to your Podfile), or clone this repository and drag the content of ```ABDataSourceController``` folder to your project.  
+* Install via cocoapods (just add pod ```'ABDataSourceController', '~> 1.1'``` to your Podfile), or clone this repository and drag the content of ```ABDataSourceController/objc``` folder to your project.  
 * For using with table view you just need to create your custom data source controller object that implements ```ABTableViewDataSourceController``` protocol:
 
 ```objective-c
