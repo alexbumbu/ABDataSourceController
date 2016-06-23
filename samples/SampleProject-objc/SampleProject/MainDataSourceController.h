@@ -10,7 +10,7 @@
 #import "ABDataSourceController.h"
 
 
-@interface MainDataSourceController : NSObject <ABDataSourceController>
+@interface MainDataSourceController : NSObject <ABTableViewDataSourceController>
 
 @property (nonatomic, assign) IBOutlet UITableView *tableView;
 @property (nonatomic, assign) IBOutlet UIViewController *viewController;
