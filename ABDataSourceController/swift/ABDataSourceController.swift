@@ -9,17 +9,17 @@
 import Foundation
 import UIKit
 
-protocol ABDataSourceController  {
+public protocol ABDataSourceController  {
     var viewController: UIViewController! { get set }
 
     func refreshDataSource(completionHandler: (() -> Void)?)
 }
 
-protocol ABTableViewDataSourceController: ABDataSourceController, UITableViewDataSource, UITableViewDelegate {
+public protocol ABTableViewDataSourceController: ABDataSourceController, UITableViewDataSource, UITableViewDelegate {
     var tableView: UITableView! { get set }
 }
 
-protocol ABCollectionViewDataSourceController: ABDataSourceController, UICollectionViewDataSource, UICollectionViewDelegate {
+public protocol ABCollectionViewDataSourceController: ABDataSourceController, UICollectionViewDataSource, UICollectionViewDelegate {
     var collectionView: UICollectionView! { get set }
 }
 
@@ -27,7 +27,7 @@ protocol ABCollectionViewDataSourceController: ABDataSourceController, UICollect
 //MARK: - UITableView extension
 private var _dataSourceController: ABTableViewDataSourceController?
 
-extension UITableView {
+public extension UITableView {
     var dataSourceController: ABTableViewDataSourceController? {
         get {
             return objc_getAssociatedObject(self, &_dataSourceController) as? ABTableViewDataSourceController
@@ -45,7 +45,7 @@ extension UITableView {
 //MARK: - UICollectionView extension
 private var _collectionDataSourceController: ABCollectionViewDataSourceController?
 
-extension UICollectionView {
+public extension UICollectionView {
     var dataSourceController: ABCollectionViewDataSourceController? {
         get {
             return objc_getAssociatedObject(self, &_collectionDataSourceController) as? ABCollectionViewDataSourceController
