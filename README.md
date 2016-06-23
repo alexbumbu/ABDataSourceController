@@ -1,16 +1,20 @@
 # ABDataSourceController
 
-Simple to use approach to get rid of your UITableViewDataSource & UITableViewDelegate code from your UIViewController and share it between UIViewControllers.
+Simple Objective-C and [Swift](https://github.com/alexbumbu) implementation for getting rid of your UITableView & UICollectionView delegate and data source code from your UIViewController and share it between UIViewControllers.
+
+## Compatibility
+
+* iOS 7.0 or newer
 
 ## Integration
 
-* Install via cocoapods (just add pod ```'ABDataSourceController', '~> 1.0'```), or clone this repository and drag the content of ```ABDataSourceController``` folder to your project.  
-* To use you just need to create your custom data source controller object that implements ```ABDataSourceController``` protocol:
+* Install via cocoapods (just add pod ```'ABDataSourceController', '~> 1.1'``` to your Podfile), or clone this repository and drag the content of ```ABDataSourceController``` folder to your project.  
+* For using with table view you just need to create your custom data source controller object that implements ```ABTableViewDataSourceController``` protocol:
 
 ```objective-c
 #import "ABDataSourceController.h"
 
-@interface CustomDataSourceController : NSObject <ABDataSourceController>
+@interface CustomDataSourceController : NSObject <ABTableViewDataSourceController>
 
 @property (nonatomic, assign) IBOutlet UITableView *tableView;
 @property (nonatomic, assign) IBOutlet UIViewController *viewController;
@@ -89,9 +93,13 @@ Simple to use approach to get rid of your UITableViewDataSource & UITableViewDel
 @end
 ```
 
-## Compatibility
+* For using with collection view follow the same principle described above and make sure your custom data source controller object conforms to ```ABCollectionViewDataSourceController``` protocol.
 
-* iOS 7 and iOS 8
+## Communication
+
+- If you **found a bug**, open an issue.
+- If you **have a feature request**, open an issue.
+- If you **want to contribute**, submit a pull request.
 
 ## Credits
 
