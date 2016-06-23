@@ -11,6 +11,6 @@
 
 @interface UITableView (DataSourceController)
 
-@property (nonatomic, strong) IBOutlet id<ABDataSourceController> dataSourceController;
+@property (nonatomic, strong) IBOutlet id<ABTableViewDataSourceController> dataSourceController;
 
 @end

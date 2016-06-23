@@ -13,7 +13,7 @@
 
 @dynamic dataSourceController;
 
-- (void)setDataSourceController:(id<ABDataSourceController>)dataSourceController {
+- (void)setDataSourceController:(id<ABTableViewDataSourceController>)dataSourceController {
     objc_setAssociatedObject(self, @selector(dataSourceController), dataSourceController, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
     self.delegate = dataSourceController;

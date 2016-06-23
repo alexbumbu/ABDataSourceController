@@ -9,20 +9,25 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@protocol ABDataSourceController <NSObject, UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, assign) IBOutlet UITableView *tableView;
+@protocol ABDataSourceController <NSObject>
+
 @property (nonatomic, assign) IBOutlet UIViewController *viewController;
 
 - (void)refreshDataSourceWithCompletionHandler:(void (^)())completion;
 
 @end
 
-@protocol ABCollectionViewDataSourceController <NSObject, UICollectionViewDataSource, UICollectionViewDelegate>
+
+@protocol ABTableViewDataSourceController <ABDataSourceController, UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, assign) IBOutlet UITableView *tableView;
+
+@end
+
+
+@protocol ABCollectionViewDataSourceController <ABDataSourceController, UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (nonatomic, assign) IBOutlet UICollectionView *collectionView;
-@property (nonatomic, assign) IBOutlet UIViewController *viewController;
-
-- (void)refreshDataSourceWithCompletionHandler:(void (^)())completion;
 
 @end
