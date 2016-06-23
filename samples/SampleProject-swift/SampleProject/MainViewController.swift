@@ -52,7 +52,9 @@ class MainViewControllerDataSource: NSObject, ABTableViewDataSourceController {
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("ABMenuTableViewCell")!
+        let identifier = "ABMenuTableViewCell"
+        
+        let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier(identifier)!
         cell.textLabel?.text = _dataSource[indexPath.row]
         cell.detailTextLabel?.textColor = .darkGrayColor()
         cell.detailTextLabel?.text = "swipe to show custom menu"
